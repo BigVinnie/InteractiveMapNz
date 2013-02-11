@@ -1,0 +1,385 @@
+/*------------------------------------ 
+	
+	WEBSITE HANDCODED BY JANSBURY 
+	www.jansbury.com
+	
+------------------------------------/*
+
+/* ==========================================================================
+   Jansbury CSS Reset
+   ========================================================================== */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+html,body {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+
+/* ==========================================================================
+   Just a font to the face
+   ========================================================================== */
+   
+@font-face {
+    font-family: 'brandon';
+    src: url('fonts/brandon_re-webfont.eot');
+    src: url('fonts/brandon_re-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/brandon_re-webfont.woff') format('woff'),
+         url('fonts/brandon_re-webfont.ttf') format('truetype'),
+         url('fonts/brandon_re-webfont.svg#brandon_grotesque_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   CSS Main
+   ========================================================================== */
+
+* {margin: auto;padding: 0;text-decoration:none;list-style: none outside none;}
+.clearfix:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+html[xmlns] .clearfix {display: block;}
+* html .clearfix {height: 1%;}
+::-moz-selection {background: #b3d4fc;text-shadow: none;}
+::selection {background: #b3d4fc;text-shadow: none;}
+img {vertical-align: middle;}
+fieldset {border: 0;margin: 0;padding: 0;}
+textarea {resize: vertical;}
+.chromeframe {margin: 0.2em 0;background: #ccc;color: #000;padding: 0.2em 0;}
+html{height:100%;}
+
+/* ======================================================================= home page ===
+   Main Styles
+   ========================================================================== */
+body {
+    font-size: .8em;
+    line-height: 1.4;
+    font-family: tahoma;
+    color: #3e3e3e;
+    background: url(i/bk_noise.png) repeat;
+    background-color:#e8e6d4;	
+}
+.cntr{margin: 10px auto;width: 100%;max-width: 1024px;}
+hr {display: block;height: 1px;border: 0;border-top: 1px solid #60c5b9;margin: 1em 0;padding: 0;}
+
+/*=== map background ===*/
+
+.compas{
+	background: url(i/compas.png) no-repeat;
+	width:127px;
+	height: 127px;
+	position: absolute;
+	margin-top: 59px;
+	margin-left: 48px;
+}
+.compasReset{-webkit-transform: rotate(0deg);-webkit-transition: all .2s ease;}
+
+.map{
+	background: url(i/960Map.png) no-repeat;
+	width:960px;
+	height: 955px;
+	position: absolute;	
+}
+
+/*=== map marker ===*/
+
+.marker:hover{
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1.2, M12=-0, M21=0, M22=1.2);
+/* 	position: relative; */
+}
+
+.marker{
+	background: url(i/marker_x2.png) no-repeat center center;
+	background-size:48px 54px;
+	height: 54px;
+	width: 38px;
+	z-index: 10;
+	position: absolute;
+	-webkit-transition: all .2s ease; 
+	-moz-transition: all .3s ease-out; 
+	-o-transition: all .3s ease-out; 
+	transition: all .3s ease-out;	
+}
+
+/*=== map actions ===*/
+
+.plus{
+	background: url(i/plus_x2.png) no-repeat center center;
+	background-size:57px 55px;
+	height: 54px;
+	width: 38px;
+	z-index: 100;
+	position: absolute;
+	margin-top: -8px;
+	-webkit-transform: rotate(0deg) translate3d( 0, 0, 0);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-o-transition:.2s;
+	-ms-transition:.2s;
+	-moz-transition:.2s;
+	-webkit-transition:.2s;
+	transition:.2s;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+	cursor: pointer;
+}
+
+.rotate2 {
+	-webkit-transform: rotate(45deg) translate3d( 0, 0, 0);
+	-moz-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	-o-transition:.2s;
+	-ms-transition:.2s;
+	-moz-transition:.2s;
+	-webkit-transition:.2s;
+	transition:.2s;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+.m1,.m2,.m3,.m4,.m6,.m7,.m8,.m9,.m5{position: relative;}
+.m1{top: 140px;left: 536px;}
+.m2{top: 115px;left: 608px;}
+.m3{top: 120px;left: 622px;}
+.m4{top: 109px;left: 689px;}
+.m5{top: 170px;left: 481px;}
+.m6{top: 110px;left: 580px;}
+.m7{top: 178px;left: 435px;}
+.m8{top: 209px;left: 263px;}
+.m9{top: 213px;left: 326px;}
+.m10{top: 82px;left: 515px;}
+.m11{top: 200px;left: 228px;}
+.m12{top: 139px;left: 327px;}
+.m13{top: 169px;left: 237px;}
+
+/*=== the text ===*/
+
+.placeNameR,.placeNameL{
+	position: absolute;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	border-bottom:2px solid #c76d49;
+	width: 290px;
+	font-family: 'brandon' helvetica, arial, sans-serif;
+	letter-spacing: .1em;
+}
+.placeNameR{text-align: right;}
+.placeCon{position: relative;width: 0;}
+
+.auckland{top: 136px;left: 242px;}
+.coromandel{top: 112px;left: 650px;}
+.napier{top: 106px;left: 732px;}
+.ruapehu{top: 117px;left: 327px;}
+.sounds{top: 166px;left: 186px;}
+.wellington{top: 109px;left: 623px;}
+.christchurch{top: 174px;left: 478px;}
+.josef{top: 205px;left: -32px;}
+.dunedin{top: 209px;left: 369px;}
+.bayofislands{top: 79px;left: 558px;}
+.teanau{top: 197px;left: -68px;}
+.tekapo{top: 136px;left: 31px;}
+.milford{top: 166px;left: -59px;}
+
+.infoCon{
+	margin: 0 auto;
+	display: none;
+	width:100%;
+	background-color:#c76d49;
+	height:280px;
+	opacity: 0.9;
+	z-index: 10;
+	position: relative;
+	z-index: 102;
+	text-align: left;
+}
+.infoText{
+
+	padding: 10px;
+	text-transform: none;
+	font-size: .8em;
+	color:#e8e6d4;	
+	letter-spacing: .2em;
+	line-height: normal;
+	font-family: georgia, times, serif;
+	font-style: italic;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+   @media screen and (max-width:854px){
+	   	.aboutInfo{width:47%;}
+	    
+   }
+   
+   @media screen and (max-width:600px){
+   
+   		.logo {float: none;margin: 0 auto;}
+   		.aboutInfo {float: none;width: 100%;padding: 2em 0;text-align: center;}
+   		.artistThumb{display: none;}
+   		.artistBody{width: 80%;}
+   		nav.main ul{text-align: center;}
+   		.main li{display: inline-block;margin: 19px 15px 0 0;}
+   		.main li:last-child{float:none;}
+   		.main li:nth-last-child(2){display:none;}
+   		.main li:nth-last-child(3){margin: 19px 0 0;}
+   		footer{height:74px}
+   		.footerLinks {float: left;}
+
+   }
+   
+   @media screen and (max-width:480px){
+   
+   		footer{height:50px}
+   		.footerLinks{display: none;}
+   		
+   			
+   }
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
